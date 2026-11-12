@@ -1,0 +1,5 @@
+config.php
+.env
+.git
+*.zip
+README_AR.md

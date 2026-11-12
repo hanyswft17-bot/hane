@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: hani-software
+    runtime: docker
+    plan: free
+    healthCheckPath: /index.php
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "5432"
+      - key: DB_NAME
+        value: postgres
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_SSLMODE
+        value: require
+      - key: SITE_NAME
+        value: Hani Software
+      - key: WHATSAPP_NUMBER
+        value: "84562812172"

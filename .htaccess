@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(config\.php|config\.example\.php|README_AR\.md)$">
+  Require all denied
+</FilesMatch>
